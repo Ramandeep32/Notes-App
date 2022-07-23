@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/player_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/note"
+            android:layout_margin="10dp">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abhaya_libre"
+            android:text="MS Dhoni"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:layout_marginStart="20dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+
+        </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/material_motion_duration_long_1"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/note_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:text="View"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+
+
+                <Button
+                    android:id="@+id/note_download"
+                    android:layout_width="110dp"
+                    android:layout_height="35dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:padding="5dp"
+                    android:fontFamily="@font/abhaya_libre"
+                    android:text="Download"
+                  android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
